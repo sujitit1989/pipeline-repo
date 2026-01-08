@@ -5,12 +5,12 @@ terraform {
       version = "4.52.0"
     }
   }
-  #  backend "azurerm" {
-  #    resource_group_name  = "rg_toduapp"
-  #   storage_account_name = "sonustg12345"
-  #   container_name       = "sonu-tfstate"
-  #   key                  = "pipeline.tfstate"
-  # }
+   backend "azurerm" {
+     resource_group_name  = "rg_toduapp"
+    storage_account_name = "sonustg12345"
+    container_name       = "sonu-tfstate"
+    key                  = "pipeline.tfstate"
+  }
 }
 
 provider "azurerm" {
